@@ -1,4 +1,5 @@
 # Hugo Memo for Development
 
-test
+## fetch theme
+git submodule update --init --recursive
 
