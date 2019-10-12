@@ -3,3 +3,4 @@
 ## fetch theme
 git submodule update --init --recursive
 
+TEST
