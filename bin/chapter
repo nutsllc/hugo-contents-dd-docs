@@ -1,0 +1,18 @@
+#!/bin/sh
+
+SELF=$(cd $(dirname $0); pwd)
+
+function _create_new_section() {
+    echo ">> create new section"
+    if [ $# -eq 0 ]; then
+        echo 'you need section name'
+        exit 1
+    fi
+    docker run -v ${SELF}/../:/site --rm -it nutsllc/toybox-hugo hugo new --kind chapter ${1}/_index.md
+}
+
+_create_new_section $@ && {
+    echo "complete!"
+}
+
+exit 0;
