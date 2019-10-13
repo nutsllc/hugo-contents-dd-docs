@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/en/shell/</loc>
+    <lastmod>2019-10-12T12:59:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/container/</loc>
+    <lastmod>2019-10-13T12:17:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/general/</loc>
+    <lastmod>2019-10-13T12:16:59+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
