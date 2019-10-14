@@ -1,13 +1,13 @@
 +++
 title = "Setup"
 date = 2019-10-14T15:34:24Z
-weight = 5
+weight = 1
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>q. </b>"
 +++
 
-### Chapter X
+### Chapter 1
 
-# Some Chapter title
+# Setting up
 
 Lorem Ipsum.
