@@ -1,6 +1,8 @@
 #!/bin/sh
 
 SELF=$(cd $(dirname $0); pwd)
+DOCKER_UID=$(id -u)
+DOCKER_GID=$(id -g)
 
 function _post() {
     echo ">> create new post"
@@ -8,7 +10,7 @@ function _post() {
         echo 'you need post name'
         exit 1
     fi
-    docker run -v ${SELF}/../:/site --rm -it nutsllc/toybox-hugo hugo new ${1}
+    docker run -u ${DOCKER_UID}:${DOCKER_GID} -v ${SELF}/../:/site --rm -it nutsllc/toybox-hugo hugo new ${1}
 }
 
 _post $@ && {

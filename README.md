@@ -32,6 +32,6 @@ $ sh bin/chapter <chapter name>
 ### Create content
 
 ```bash
-$ sh bin/post <section name>/<post name>.md
+$ sh bin/post <chapter name>/<post name>.md
 ```
 

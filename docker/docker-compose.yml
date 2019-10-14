@@ -6,6 +6,5 @@ hugo-memo-dev:
         - VIRTUAL_HOST=memo.ontheroad.jp
         - LETSENCRYPT_HOST=memo.ontheroad.jp
         - LETSENCRYPT_EMAIL=dev@nutsllc.jp
-        - PROXY_CACHE=false
     ports:
         - "80"
