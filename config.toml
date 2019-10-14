@@ -9,7 +9,7 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/nutsllc/hugo-memo-dev/tree/master/content"
+  editURL = "https://github.com/nutsllc/hugo-memo-dev/tree/master/content/"
   description = "Documentation for Toybox DD"
   author = "Hideaki Ishihara"
   showVisitedLinks = true
