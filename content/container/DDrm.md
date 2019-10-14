@@ -1,7 +1,7 @@
 ---
 title: "DDrm"
 date: 2019-10-14T09:06:55Z
-weight = 5
+weight: 5
 draft: false
 ---
 

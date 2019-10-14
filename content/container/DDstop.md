@@ -1,7 +1,7 @@
 ---
 title: "DDstop"
 date: 2019-10-14T09:06:26Z
-weight = 3
+weight: 3
 draft: false
 ---
 

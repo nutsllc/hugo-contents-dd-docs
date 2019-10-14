@@ -1,7 +1,7 @@
 ---
 title: "DDstart"
 date: 2019-10-14T09:06:17Z
-weight = 2
+weight: 2
 draft: false
 ---
 
