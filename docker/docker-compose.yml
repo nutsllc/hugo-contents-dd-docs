@@ -3,6 +3,8 @@ hugo-memo-dev:
     volumes:
         - ../public:/usr/share/nginx/html
     environment:
+        - TOYBOX_UID=1314
+        - TOYBOX_GID=1314
         - VIRTUAL_HOST=memo.ontheroad.jp
         - LETSENCRYPT_HOST=memo.ontheroad.jp
         - LETSENCRYPT_EMAIL=dev@nutsllc.jp
