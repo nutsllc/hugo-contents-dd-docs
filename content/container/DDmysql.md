@@ -5,11 +5,13 @@ weight: 32
 draft: false
 ---
 
+## 概要
 ``DDmysql`` コマンドは MySQL が稼働しているコンテナに接続し ``mysql`` コマンドを実行します。
 
+## 説明
 MySQL への接続は、
 
-ユーザー名: root  
+ユーザー名: root
 パスワード: root
 
 です。
@@ -22,6 +24,8 @@ MySQL への接続は、
 
 ``exit`` コマンドでコンテナから抜けることが出来ます。
 
+## Example
+
 ```bash
 $ DDmysql
-``` 
+```

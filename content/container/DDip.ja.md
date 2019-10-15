@@ -1,21 +1,22 @@
 ---
-title: "DDdown"
+title: "DDip"
 date: 2019-10-14T09:06:26Z
-weight: 5
+weight: 50
 draft: false
 ---
 
 ## 概要
-``DDdown`` コマンドは 稼働中の Docker コンテナを停止し、コンテナを破棄します。
+``DDip`` コマンドは 稼働中の Docker コンテナの IP アドレスを出力します。
 
 ## 説明
-``DDdown`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から停止して廃棄したいコンテナを選択します。
+``DDip`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から IP アドレスを取得したいコンテナを選択します。
 
 ## Example
-``DDdown`` コマンドを実行します。
+
+``DDip`` コマンドを実行します。
 
 ```bash
-$ DDdown
+$ DDip
 ```
 
 peco が起動し、コンテナ一覧が表示されるので、その中からコンテナを選択します。
@@ -34,12 +35,10 @@ ae953f2b2d71        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/ent
 56f96ed795fc        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 ```
 
-選択したコンテナが停止され、コンテナが破棄されます。
+選択したコンテナの IP アドレスが出力されます。
 
 ```bash
-$ DDdown
-docker stop
-4cac4bb797f0
-docker rm
-4cac4bb797f0
+$ DDip
+172.17.0.8
 ```
+

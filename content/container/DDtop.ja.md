@@ -1,28 +1,25 @@
 ---
-title: "DDdown"
+title: "DDtop"
 date: 2019-10-14T09:06:26Z
-weight: 5
+weight: 51
 draft: false
 ---
 
 ## 概要
-``DDdown`` コマンドは 稼働中の Docker コンテナを停止し、コンテナを破棄します。
+
+``DDtop`` コマンドは Docker コンテナ内部で稼働しているプロセスの一覧を表示します。
 
 ## 説明
-``DDdown`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から停止して廃棄したいコンテナを選択します。
+``DDtop`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から hosts ファイルの内容を出力したいコンテナを選択します。
+
 
 ## Example
-``DDdown`` コマンドを実行します。
 
-```bash
-$ DDdown
-```
-
-peco が起動し、コンテナ一覧が表示されるので、その中からコンテナを選択します。
+``DDtop`` コマンドを実行すると、コンテナ内部の稼働プロセス一覧が表示されます。
 
 ```bash
 QUERY>                                                                 IgnoreCase [10 (1/1)]
-0333057af059        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      36 min
+0333057af059        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      54 min
 a93835fa896d        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 0622d9c615ad        nutsllc/toybox-php:7.0-fpm               "/entrypoint-ex.sh p…"   7 week
 3963109fdda3        nutsllc/toybox-mariadb:10.1.14           "/entrypoint-ex.sh"      7 week
@@ -34,12 +31,12 @@ ae953f2b2d71        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/ent
 56f96ed795fc        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 ```
 
-選択したコンテナが停止され、コンテナが破棄されます。
+コンテナを選択すると選択したコンテナの内部プロセス一覧が出力されます。
 
 ```bash
-$ DDdown
-docker stop
-4cac4bb797f0
-docker rm
-4cac4bb797f0
+$ DDtop
+UID     PID   PPID  C  STIME TTY TIME     CMD
+root    9394  9375  0  Aug26 ?   00:00:00 nginx: master process nginx -g daemon off;
+nobita  9496  9394  0  Aug26 ?   00:00:13 nginx: worker process
+$
 ```

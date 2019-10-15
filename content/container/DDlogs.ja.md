@@ -1,21 +1,22 @@
 ---
-title: "DDdown"
+title: "DDlogs"
 date: 2019-10-14T09:06:26Z
-weight: 5
+weight: 50
 draft: false
 ---
 
 ## 概要
-``DDdown`` コマンドは 稼働中の Docker コンテナを停止し、コンテナを破棄します。
+``DDlogs`` コマンドは 稼働中の Docker コンテナのログを出力します。
 
 ## 説明
-``DDdown`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から停止して廃棄したいコンテナを選択します。
+``DDlogs`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中からログを取得したいコンテナを選択します。
 
 ## Example
-``DDdown`` コマンドを実行します。
+
+``DDlogs`` コマンドを実行します。
 
 ```bash
-$ DDdown
+$ DDlogs
 ```
 
 peco が起動し、コンテナ一覧が表示されるので、その中からコンテナを選択します。
@@ -34,12 +35,26 @@ ae953f2b2d71        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/ent
 56f96ed795fc        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 ```
 
-選択したコンテナが停止され、コンテナが破棄されます。
+選択したコンテナのログが出力されます。
 
 ```bash
-$ DDdown
-docker stop
-4cac4bb797f0
-docker rm
-4cac4bb797f0
+$ DDlogs
+172.17.0.10 -  15/Oct/2019:20:43:40 +0900 "GET /wp-login.php" 200
+172.17.0.10 -  15/Oct/2019:20:43:41 +0900 "POST /wp-login.php" 200
+172.17.0.10 -  15/Oct/2019:20:43:42 +0900 "POST /xmlrpc.php" 200
+172.17.0.10 -  15/Oct/2019:20:55:50 +0900 "GET /index.php" 404
+172.17.0.10 -  15/Oct/2019:21:14:19 +0900 "GET /index.php" 404
+172.17.0.10 -  15/Oct/2019:21:28:29 +0900 "POST /xmlrpc.php" 200
+172.17.0.10 -  15/Oct/2019:21:33:18 +0900 "GET /index.php" 404
+172.17.0.10 -  15/Oct/2019:21:52:22 +0900 "POST /wp-cron.php" 200
 ```
+
+## Tips
+
+```DDlogs``` に ``-f`` オプションをつけて実行すると、リアルタイムでログが更新されます。
+
+```bash
+$ DDlogs -f
+```
+
+

@@ -1,21 +1,26 @@
 ---
-title: "DDdown"
+title: "DDstats"
 date: 2019-10-14T09:06:26Z
-weight: 5
+weight: 50
 draft: false
 ---
 
 ## 概要
-``DDdown`` コマンドは 稼働中の Docker コンテナを停止し、コンテナを破棄します。
+
+``DDstats`` コマンドは 稼働中の Docker コンテナの CPU やメモリ使用状況などの stats を出力します。
 
 ## 説明
-``DDdown`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から停止して廃棄したいコンテナを選択します。
+
+``DDstats`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から環境変数の一覧を取得したいコンテナを選択します。
+
+stats はリアルタイムで表示され、``Ctl`` + ``c`` で ``DDstats`` が終了します。
 
 ## Example
-``DDdown`` コマンドを実行します。
+
+``DDstats`` コマンドを実行します。
 
 ```bash
-$ DDdown
+$ DDstats
 ```
 
 peco が起動し、コンテナ一覧が表示されるので、その中からコンテナを選択します。
@@ -34,12 +39,12 @@ ae953f2b2d71        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/ent
 56f96ed795fc        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 ```
 
-選択したコンテナが停止され、コンテナが破棄されます。
+選択したコンテナの stats がリアルタイムで表示されます。
 
 ```bash
-$ DDdown
-docker stop
-4cac4bb797f0
-docker rm
-4cac4bb797f0
+CONTAINER ID  NAME                            CPU % MEM USAGE / LIMIT     MEM %  NET I/O         BLOCK I/O       PIDS
+3963109fdda3  bin_starton.jp-wordpress-db_1   0.12% 111.5MiB / 1.795GiB   6.06%  103MB / 4.36GB  146MB / 1.61GB  28
+CONTAINER ID  NAME                            CPU % MEM USAGE / LIMIT     MEM %  NET I/O         BLOCK I/O       PIDS
+3963109fdda3  bin_starton.jp-wordpress-db_1   0.09% 111.5MiB / 1.795GiB   6.06%  103MB / 4.36GB  146MB / 1.61GB  28
 ```
+

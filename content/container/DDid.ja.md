@@ -1,28 +1,27 @@
 ---
-title: "DDdown"
+title: "DDid"
 date: 2019-10-14T09:06:26Z
-weight: 5
+weight: 51
 draft: false
 ---
 
-## 概要
-``DDdown`` コマンドは 稼働中の Docker コンテナを停止し、コンテナを破棄します。
+``DDid`` コマンドは 稼働中の Docker コンテナのコンテナ ID を出力します。
 
-## 説明
-``DDdown`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から停止して廃棄したいコンテナを選択します。
+``DDid`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中からコンテナ ID を出力したいコンテナを選択します。
 
 ## Example
-``DDdown`` コマンドを実行します。
+
+``DDid`` コマンドを実行します。
 
 ```bash
-$ DDdown
+$ DDid
 ```
 
-peco が起動し、コンテナ一覧が表示されるので、その中からコンテナを選択します。
+peco が起動し、稼働中のコンテナ一覧が表示されます。
 
 ```bash
 QUERY>                                                                 IgnoreCase [10 (1/1)]
-0333057af059        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      36 min
+0333057af059        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      13 min
 a93835fa896d        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 0622d9c615ad        nutsllc/toybox-php:7.0-fpm               "/entrypoint-ex.sh p…"   7 week
 3963109fdda3        nutsllc/toybox-mariadb:10.1.14           "/entrypoint-ex.sh"      7 week
@@ -34,12 +33,9 @@ ae953f2b2d71        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/ent
 56f96ed795fc        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 week
 ```
 
-選択したコンテナが停止され、コンテナが破棄されます。
+任意のコンテナを選択すると、選択したコンテナのコンテナ ID が出力されます。
 
 ```bash
-$ DDdown
-docker stop
-4cac4bb797f0
-docker rm
-4cac4bb797f0
+$ DDid
+0622d9c615ad
 ```
