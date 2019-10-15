@@ -1,5 +1,5 @@
 +++
-title = "コンテナ/イメージ"
+title = "Containor / Image"
 date = 2019-10-13T12:17:07Z
 weight = 2
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>2. </b>"
 
 ### Chapter 2
 
-# コンテナ/イメージ<br>（DD Command）
+# Containor / Image<br>（DD Command）
 
 |DD Command|In case of docker command|Description|
 |:---|:---|:---|
@@ -41,3 +41,4 @@ pre = "<b>2. </b>"
 |DDvol|docker |List volumes of a container mounted|
 |[DDhosts](ddhosts/)|docker exec -it \<container id> cat /etc/hosts|Show the contents in /etc/hosts file |
 |[DDenv](ddenv/)|docker exec -it \<container id> env|List defined environment variables|
+ 
