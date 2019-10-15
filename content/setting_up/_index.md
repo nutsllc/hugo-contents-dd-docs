@@ -8,6 +8,6 @@ pre = "<b>1. </b>"
 
 ### Chapter 1
 
-# Setting up
+# セッティング
 
 Lorem Ipsum.
