@@ -1,6 +1,9 @@
 baseURL = "/"
-languageCode = "en-US"
-defaultContentLanguage = "en"
+#languageCode = "en-US"
+#defaultContentLanguage = "en"
+languageCode = "ja-JP"
+defaultContentLanguage = "ja"
+
 
 title = "Toybox DD Documentation"
 theme = "hugo-theme-learn"
@@ -20,9 +23,14 @@ defaultContentLanguageInSubdir= true
 home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
+[Languages.ja]
+title = "Toybox DD ドキュメント"
+weight = 5
+languageName = "Japanese"
+
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
-weight = 1
+title = "Documentation for Toybox DD"
+weight = 5
 languageName = "English"
 
 [[Languages.en.menu.shortcuts]]
@@ -49,7 +57,7 @@ weight = 30
 
 [Languages.fr]
 title = "Documentation du Toybox DD"
-weight = 2
+weight = 10
 languageName = "Français"
 
 [[Languages.fr.menu.shortcuts]]
