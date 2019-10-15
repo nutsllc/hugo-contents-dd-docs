@@ -10,4 +10,8 @@ pre = "<b>1. </b>"
 
 # Getting Started
 
-Lorem Ipsum.
+This section explain install and uninstall the Toybox DD.
+
+- [Install](install/)
+- [Uninstall](uninstall/)
+
