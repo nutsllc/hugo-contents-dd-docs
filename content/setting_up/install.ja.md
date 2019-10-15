@@ -1,7 +1,7 @@
 ---
 title: "インストール"
 date: 2019-10-14T09:06:07Z
-weight: 1
+weight: 10
 draft: false
 ---
 
