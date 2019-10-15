@@ -6,14 +6,12 @@ draft: false
 ---
 
 ## 概要
-
 ``DDhosts`` コマンドは 稼働中の Docker コンテナの hosts ファイル(``/etc/hosts``)の内容を出力します。
 
 ## 説明
 ``DDhosts`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から hosts ファイルの内容を出力したいコンテナを選択します。
 
 ## Example
-
 ``DDhosts`` コマンドを実行します。
 
 ```bash
