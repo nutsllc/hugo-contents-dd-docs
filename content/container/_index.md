@@ -27,9 +27,9 @@ pre = "<b>2. </b>"
 |[DDrmia](ddrmia/)|docker rmi $(docker images -q)|Remove all images|
 |DDnone|docker rmi $(docker images \| awk '/^<none>/ { print $3 }')|Remove \<none> image|
 |DDidi|docker inspect -f '{{.Id}}' \<image id>|Show image id|
-|DDbash|docker exec -it \<container id> /bin/bash|Go into container with /bin/bash|
-|DDsh|docker exec -it \<container id> /bin/sh|Go into container with /bin/sh|
-|DDmysql|docker exec -it \<container id> mysql -u root -proot|Go into container with mysql -u root -proot|
+|[DDbash](ddbash/)|docker exec -it \<container id> /bin/bash|Go into container with /bin/bash|
+|[DDsh](ddsh/)|docker exec -it \<container id> /bin/sh|Go into container with /bin/sh|
+|[DDmysql](ddmysql/)|docker exec -it \<container id> mysql -u root -proot|Go into container with mysql -u root -proot|
 |DDmongo|docker exec -it \<container id> mongo -u root -p|Go into container with mongo -u root -p|
 |DDmyadmin|docker run -d -e PMA_HOST=\<container IP adress> -p 8080:80 phpmyadmin/phpmyadmin|Run phpMyAdmin container and connect to your running container|
 |DDstats|docker status|Display a live stream of container|
@@ -39,5 +39,5 @@ pre = "<b>2. </b>"
 |DDinspect|docker inspect \<container id>|Return low-level information on a container|
 |DDip|docker inspect -f "{{.NetworkSettings.IPAddress}}" \<container id>|Show the IP Address of a container|
 |DDvol|docker |List volumes of a container mounted|
-|DDhosts|docker exec -it \<container id> cat /etc/hosts|Show the contents in /etc/hosts file |
-|DDenv|docker exec -it \<container id> env|List defined environment variables|
+|[DDhosts](ddhosts/)|docker exec -it \<container id> cat /etc/hosts|Show the contents in /etc/hosts file |
+|[DDenv](ddenv/)|docker exec -it \<container id> env|List defined environment variables|
