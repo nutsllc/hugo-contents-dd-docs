@@ -17,7 +17,7 @@ defaultContentLanguageInSubdir= true
   author = "Hideaki Ishihara"
   showVisitedLinks = true
   disableBreadcrumb = false
-  disableNextPrev = false
+  disableNextPrev = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
