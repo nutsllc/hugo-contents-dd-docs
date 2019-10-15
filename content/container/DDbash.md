@@ -13,6 +13,9 @@ draft: false
 
 ``DDbash`` コマンドは ``docker exec -it <コンテナID> /bin/bash`` と同等です。
 
+``exit`` コマンドでコンテナから抜けることが出来ます。
+
 ```bash
 $ DDbash
 ``` 
+
