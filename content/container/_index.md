@@ -13,18 +13,18 @@ pre = "<b>2. </b>"
 |DD Command|In case of docker command|Description|
 |:---|:---|:---|
 |[DD](dd/)|docker ps -a|Show all containers|
-|DDimages|docker images |Show all images|
+|[DDimages](DDimages/)|docker images |Show all images|
 |DDps|docker ps|Show running containers in default format|
 |DDpsa|docker ps -a|Show all containers in default format|
-|DDstart|docker start \<container id>|start stopped container|
-|DDstop|docker stop \<container id>|Stop running container|
-|DDstopa|docker stop $(docker ps -q)|Stop all of running container|
-|DDrm|docker rm \<container id>|Remove a container|
-|DDrma|docker rm $(docker ps -aq)|Remove all of running containers|
-|DDdown|docker stop \<container id><br>docker rm \<container id>|Stop and remove running container|
+|[DDstart](ddstart/)|docker start \<container id>|start stopped container|
+|[DDstop](ddstop/)|docker stop \<container id>|Stop running container|
+|[DDstopa](ddstopa/)|docker stop $(docker ps -q)|Stop all of running container|
+|[DDrm](ddrm/)|docker rm \<container id>|Remove a container|
+|[DDrma](ddrma/)|docker rm $(docker ps -aq)|Remove all of running containers|
+|[DDdown](dddown/)|docker stop \<container id><br>docker rm \<container id>|Stop and remove running container|
 |DDid|docker inspect -f '{{.Id}}' \<container id>|Show container id|
-|DDrmi|docker rmi \<image id>|Remove image|
-|DDrmia|docker rmi $(docker images -q)|Remove all images|
+|[DDrmi](ddrmi/)|docker rmi \<image id>|Remove image|
+|[DDrmia](ddrmia/)|docker rmi $(docker images -q)|Remove all images|
 |DDnone|docker rmi $(docker images \| awk '/^<none>/ { print $3 }')|Remove \<none> image|
 |DDidi|docker inspect -f '{{.Id}}' \<image id>|Show image id|
 |DDbash|docker exec -it \<container id> /bin/bash|Go into container with /bin/bash|
