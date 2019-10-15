@@ -8,7 +8,7 @@ pre = "<b>2. </b>"
 
 ### Chapter 2
 
-# コンテナ関連コマンド<br>（DD Command）
+# コンテナ/イメージ<br>（DD Command）
 
 |DD Command|In case of docker command|Description|
 |:---|:---|:---|
