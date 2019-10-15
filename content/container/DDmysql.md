@@ -9,7 +9,7 @@ draft: false
 
 MySQL への接続は、
 
-ユーザー名: root
+ユーザー名: root  
 パスワード: root
 
 です。
