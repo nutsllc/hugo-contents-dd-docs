@@ -1,5 +1,5 @@
 +++
-title = "イメージ"
+title = "イメージ関連"
 date = 2019-10-13T12:17:07Z
 weight = 11
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>3. </b>"
 
 ### Chapter 3
 
-# イメージ<br>（DD）
+# イメージ関連コマンド<br>（DD）
 
 |DD Command|In case of docker command|Description|
 |:---|:---|:---|
