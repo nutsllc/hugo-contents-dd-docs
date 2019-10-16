@@ -26,7 +26,7 @@ pre = "<b>2. </b>"
 |[DDbash](ddbash/)|docker exec -it \<container id> /bin/bash|Go into container with /bin/bash|
 |[DDmysql](ddmysql/)|docker exec -it \<container id> mysql -u root -proot|Go into container with mysql -u root -proot|
 |DDmongo|docker exec -it \<container id> mongo -u root -p|Go into container with mongo -u root -p|
-|[DDmyadmin](myadmin/)|docker run -d -e PMA_HOST=\<container IP adress> -p 8080:80 phpmyadmin/phpmyadmin|Run phpMyAdmin container and connect to your running container|
+|[DDmyadmin](ddmyadmin/)|docker run -d -e PMA_HOST=\<container IP adress> -p 8080:80 phpmyadmin/phpmyadmin|Run phpMyAdmin container and connect to your running container|
 |[DDtop](ddtop/)|docker top \<container id>|Display the running processes of a container|
 |[DDstats](ddstats/)|docker status|Display a live stream of container|
 |[DDlogs](ddlogs/)|docker logs \<container id>|Fetch the logs of a container|
