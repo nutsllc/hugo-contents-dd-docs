@@ -22,7 +22,6 @@ pre = "<b>2. </b>"
 |[DDrma](ddrma/)|docker rm $(docker ps -aq)|Remove all of running containers|
 |[DDdown](dddown/)|docker stop \<container id><br>docker rm \<container id>|Stop and remove running container|
 |[DDid](ddid/)|docker inspect -f '{{.Id}}' \<container id>|Show container id|
-|[DDidi](ddidi)|docker inspect -f '{{.Id}}' \<image id>|Show image id|
 |[DDsh](ddsh/)|docker exec -it \<container id> /bin/sh|Go into container with /bin/sh|
 |[DDbash](ddbash/)|docker exec -it \<container id> /bin/bash|Go into container with /bin/bash|
 |[DDmysql](ddmysql/)|docker exec -it \<container id> mysql -u root -proot|Go into container with mysql -u root -proot|

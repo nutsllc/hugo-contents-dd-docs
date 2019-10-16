@@ -8,7 +8,7 @@ draft: false
 ## 概要
 ``DDimages`` は Docker ホストに存在する全ての Docker コンテナイメージ一覧を出力します。
 
-## Example
+## 使い方
 ``DDimages`` コマンドを実行します。
 
 ```bash

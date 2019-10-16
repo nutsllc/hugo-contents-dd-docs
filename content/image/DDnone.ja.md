@@ -8,7 +8,7 @@ draft: false
 ## 概要
 ``DDnone`` コマンドは Docker ホスト上に存在する全ての <none> イメージを削除します。
 
-## Example
+## 使い方
 ``DDnone`` コマンドを実行すると全ての <none> イメージが削除されます。
 
 ```bash
