@@ -107,7 +107,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     color: #fff;
     text-align: center;
     /* border-bottom: 4px solid #9c6fb6; */
-    border-bottom: 2px solid #6fb3b6;
+    border-bottom: 4px solid #3f4773;
     padding: 1rem;
 }
 #header a {
@@ -123,8 +123,10 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 .searchbox {
     margin-top: 1rem;
     position: relative;
-    border: 1px solid #915eae;
-    background: #764890;
+    /* border: 1px solid #915eae; */
+    border: 1px solid #6fb3b6;
+    /* background: #764890; */
+    background: #3f4773;
     border-radius: 4px;
 }
 .searchbox label {
