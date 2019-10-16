@@ -10,4 +10,12 @@ pre = "<b>4. </b>"
 
 # ネットワーク関連コマンド<br>（DN Command）
 
-Lorem Ipsum.
+|Docker DD|In case of docker command|Description|
+|:---|:---|:---|
+|DN|docker network ls|Show all networks|
+|DNrm|docker network rm \<network id>|Remove a network|
+|DNinspect|docker network inspect \<network id>|Display detailed information on network|
+|DNgateway|docker network inspect -f '{{range .IPAM.Config}} {{.Gateway}} {{end}}' \<network id>|Show the Gateway IPv4 Address of a network|
+|DNsubnet|docker network inspect -f '{{range .IPAM.Config}} {{.Subnet}} {{end}}' \<network id>|Show the Subnet IPv4 Address of a network|
+|DNnode|docker network inspect -f '{{range .Containers}} {{.Name}} {{end}}'|List containers connected a network|
+|DNid|docker network inspect -f '{{.Id}}' \<network id>|Show a network id |
