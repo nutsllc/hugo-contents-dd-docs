@@ -1,5 +1,5 @@
 ---
-title: "DDenv"
+title: "DDinspect"
 date: 2019-10-14T09:06:26Z
 weight: 50
 draft: false
@@ -11,7 +11,7 @@ draft: false
 ## 説明
 ``DDinspect`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から環境変数の一覧を取得したいコンテナを選択します。
 
-## Example
+## 使い方
 ``DDinspect`` コマンドを実行します。
 
 ```bash

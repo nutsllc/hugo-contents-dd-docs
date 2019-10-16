@@ -17,7 +17,7 @@ draft: false
 
 ``exit`` コマンドでコンテナから抜けることが出来ます。
 
-## Example
+## 使い方
 ``DDbash`` コマンドを実行します。
 
 ```bash

@@ -15,7 +15,7 @@ draft: false
 
 ``DDmyadmin`` コマンドで phpMyAdmin コンテナが起動したら、ブラウザで ``localhost:8080`` にアクセスすると PhpMyadmin のログイン画面が表示されます。
 
-## Example
+## 使い方
 ``DDmyadmin`` コマンドを実行します。
 
 ```bash

@@ -15,8 +15,7 @@ draft: false
 
 stats はリアルタイムで表示され、``Ctl`` + ``c`` で ``DDstats`` が終了します。
 
-## Example
-
+## 使い方
 ``DDstats`` コマンドを実行します。
 
 ```bash
