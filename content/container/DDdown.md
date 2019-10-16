@@ -1,7 +1,7 @@
 ---
 title: "DDdown"
 date: 2019-10-14T09:06:26Z
-weight: 5
+weight: 7
 draft: false
 ---
 
@@ -11,7 +11,7 @@ draft: false
 ## 説明
 ``DDdown`` コマンドを実行すると peco が起動し稼働中のコンテナ一覧が表示されるので、その中から停止して廃棄したいコンテナを選択します。
 
-## Example
+## 使い方
 ``DDdown`` コマンドを実行します。
 
 ```bash

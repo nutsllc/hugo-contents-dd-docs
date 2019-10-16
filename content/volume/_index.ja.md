@@ -1,12 +1,12 @@
 +++
 title = "ボリューム"
 date = 2019-10-13T12:17:07Z
-weight = 4
+weight = 13
 chapter = true
-pre = "<b>4. </b>"
+pre = "<b>5. </b>"
 +++
 
-### Chapter 4
+### Chapter 5
 
 # ボリューム<br>（DV Command）
 

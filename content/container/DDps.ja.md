@@ -13,7 +13,15 @@ draft: false
 
 特別の場合を除いて、通常は [DD](dd/) コマンドの方が使い易いと思います。
 
-以下の例では、ホスト上には 10 個のコンテナが存在していることがわかります。
+## 使い方
+
+``DDps`` コマンドを実行します。
+
+```bash
+$ DDps
+```
+
+Docker ホスト上に存在する全てのコンテナが一覧で表示されます。
 
 ```bash
 $ DDps
@@ -30,3 +38,4 @@ ae953f2b2d71        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/ent
 56f96ed795fc        nutsllc/toybox-nginx:1.15.7-alpine       "/entrypoint-ex.sh"      7 weeks ago         Up 7 weeks          0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   toybox-proxy-nginx
 ```
 
+この例では、ホスト上には 10 個のコンテナが存在していることがわかります。
