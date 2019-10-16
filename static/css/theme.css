@@ -124,7 +124,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin-top: 1rem;
     position: relative;
     /* border: 1px solid #915eae; */
-    border: 1px solid #6fb3b6;
+    /* border: 1px solid #6fb3b6; */
     /* background: #764890; */
     background: #545b82;
     /* border-radius: 4px; */
