@@ -1,9 +1,10 @@
-# Toybox DD Document
+<div style=“padding: 6em 0;”>
+# Toybox DD Document 
+</div>
 
-## Contribute to this documentation
+<center>
+V1.0<br>
+[Contribute to this documentation](contribution/)
+</center>
 
-Feel free to update this content, just click the **Edit this page** link displayed on top right of each page. and pull request it.
 
-{{% notice info %}}
-Your modification will be deployed automatically when merged.
-{{% /notice %}} 
