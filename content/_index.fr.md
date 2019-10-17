@@ -1,9 +1,7 @@
-<h1 class=“top-page-title”> Document DD Toybox 
-</h1>
+<div class=“hero-title”>
 
-<center>
-V1.0<br>
+<h1> Document DD Toybox</h1>
+V1.0<br />
 [Contribute to this documentation](contribution/)
-</center>
 
-
+</div>

@@ -1,3 +1,6 @@
-.top-page-title {
-	padding: 6em 0;
+.hero-title {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-evenly;
+	height: 90%;
 }
