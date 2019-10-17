@@ -1,7 +1,7 @@
-<div class=“hero-title”>
+<div class="hero-title">
 
-<h1 class=“top-page-title”> Toybox DD ドキュメント</h1>
-V1.0<br>
-[プロジェクトへの貢献](contribution/)
+<h1> Toybox DD ドキュメント</h1>
+<p>V1.0</p>
+<p><a href="contribution/">プロジェクトへの貢献</a></p>
 
 </div>
