@@ -1,9 +1,13 @@
 # Toybox DD ドキュメント
 
-## Contribute to this documentation
+## プロジェクトへの貢献
 
-Feel free to update this content, just click the **Edit this page** link displayed on top right of each page. and pull request it.
+ドキュメントの作成は Nuts Toybox コミュニティ全体にとって重要です。質の高いドキュメントを維持、発展させるためにぜひご協力ください。
+
+### 方法
+
+それぞれのページ右上に表示されている **Edit this page** をクリックすると 対応する GitHub サイトが開きますので、プルリクエストを送信してください :-) 
 
 {{% notice info %}}
-Your modification will be deployed automatically when merged.
+お送りいただいたプルリクエストがマージされ次第、ドキュメントに反映されます。
 {{% /notice %}}
