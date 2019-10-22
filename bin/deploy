@@ -1,0 +1,17 @@
+#!/bin/sh
+
+SELF=$(cd $(dirname $0); pwd)
+DOCKER_UID=$(id -u)
+DOCKER_GID=$(id -g)
+
+DESTINATION=${SELF}/../../html/doc
+
+function _move_contents() {
+    mkdir -p ${DESTINATION}
+    rm -rf ${DESTINATION}/*
+    mv -f ${SELF}/../public/* ${DESTINATION}
+}
+
+_move_contents
+
+exit 0;
