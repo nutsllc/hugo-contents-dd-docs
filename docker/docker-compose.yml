@@ -1,7 +1,7 @@
 hugo-dd-docs:
-    image: nutsllc/toybox-nginx:1.15.7-alpine
+    image: nutsllc/toybox-hugo
     container_name: hugo-dd-docs
     volumes:
-        - ../public:/usr/share/nginx/html
+        - ../:/site
     ports:
         - "1313:1313"
