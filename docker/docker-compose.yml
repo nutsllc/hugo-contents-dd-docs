@@ -5,8 +5,8 @@ hugo-memo-dev:
     environment:
         - TOYBOX_UID=1314
         - TOYBOX_GID=1314
-        - VIRTUAL_HOST=memo.ontheroad.jp
-        - LETSENCRYPT_HOST=memo.ontheroad.jp
-        - LETSENCRYPT_EMAIL=dev@nutsllc.jp
+        - VIRTUAL_HOST=www.nutsllc.com
+        - LETSENCRYPT_HOST=www.nutsllc.com
+        - LETSENCRYPT_EMAIL=dev@nutsllc.com
     ports:
         - "80"
