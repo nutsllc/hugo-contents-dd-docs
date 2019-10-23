@@ -1,12 +1,7 @@
-hugo-memo-dev:
+hugo-dd-docs:
     image: nutsllc/toybox-nginx:1.15.7-alpine
+    container_name: hugo-dd-docs
     volumes:
         - ../public:/usr/share/nginx/html
-    environment:
-        - TOYBOX_UID=1314
-        - TOYBOX_GID=1314
-        - VIRTUAL_HOST=www.nutsllc.com
-        - LETSENCRYPT_HOST=www.nutsllc.com
-        - LETSENCRYPT_EMAIL=dev@nutsllc.com
     ports:
-        - "80"
+        - "1313:1313"

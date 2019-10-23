@@ -1,0 +1,20 @@
+#!/bin/sh
+
+SELF=$(cd $(dirname $0); pwd)
+
+cd ${SELF}/../../hugo-contents-dd-docs
+
+# fetch repository
+git --git-dir=.git pull origin master
+
+# generate HTML
+sh bin/hugo
+
+# restart docker container
+cd docker/
+docker-compose down
+docker-compose up -d
+#docker-compose -f docker/docker-compose.yml down
+#docker-compose -f docker/docker-compose.yml up -d
+
+exit 0
