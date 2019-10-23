@@ -1,7 +1,6 @@
 #!/bin/sh
 
 SELF=$(cd $(dirname $0); pwd)
-
 cd ${SELF}/..
 
 # fetch repository
